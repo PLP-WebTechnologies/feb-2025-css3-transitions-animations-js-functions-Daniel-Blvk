@@ -1,0 +1,150 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    transition: background-color 0.5s ease-in-out;
+    /* background: linear-gradient(to right, #f0f0f0, #ffffff); */
+    /* Example background */
+    animation: background-shift 5s infinite alternate;
+    /* Background animation */
+}
+
+@keyframes background-shift {
+    0% {
+        background-color: #f0f0f0;
+    }
+
+    100% {
+        background-color: #ffffff;
+    }
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Optional: Container background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.box {
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 255, 170);
+    border-radius: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bounce {
+    animation: bounce 1s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.fade {
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.slide {
+    animation: slide 1s;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100px);
+    }
+}
+
+.pulse {
+    animation: pulse 0.5s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
